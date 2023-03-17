@@ -1,0 +1,57 @@
+docker -v   # to check docker version
+ps -ef |grep dockerd 
+systemctl status docker.service         # press q on your keyboard to come out 
+systemctl restart docker.service 
+docker ps 
+ docker stats 
+
+
+docker image ls                         # to list images on your server 
+
+docker pull nginx:1.21
+docker pull nginx
+docker pull tomcat:latest 
+docker pull mongo:latest 
+
+docker image inspect tomcat:latest                # to inpect the image.. will list teh details about the image.
+docker image inspect <image-id>                   # to inpect the image.. will list teh details about the image.
+docker inspect <container id cfdddf218479>        # to inpect the container
+docker logs <container id 2e7dc04c2308> 
+
+
+
+docker run nginx:1.21                   # to run a container from an image
+docker run -d nginx:1.21                # to run a container from an image, -d specifies the detached mode
+docker run -d tomcat:latest 
+
+
+docker ps -a                            # to see the containers running/exited 
+docker ps                               # to see only the runnin containers 
+
+docker start <container id /name>                 # to start a stopped container
+docker stop cfdddf218479                          # to stop a running container.. stop is a gracefull shutdown
+docker kill <container id bab9261d91ef>           # to stop a running container.. Kill is stopping container forcibly
+
+docker rm <container id e8cf4408db94>                            # to remove/ delete a stopped container
+docker rm --force e8cf4408db94
+docker rm --force 0b1fd22169fd bab9261d91ef 0144124cef5c
+
+
+///   The docker run command must specify an IMAGE to derive the container from. An image developer can define image defaults related to:
+detached or foreground running (-d for detached, -it for interactive or foreground) 
+container identification 
+network settings
+runtime constraints on CPU and memory 
+////
+
+docker run -d -P <image id-3f8a00f137a0>                                   ## -P will generate port dynamically
+docker run -d -p 9080:8080 tomcat:8.5.40                                   ## -p allows you to configure your own port 
+
+
+docker exec -it fd4baa8eae99 /bin/bash
+
+
+
+
+
+
