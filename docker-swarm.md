@@ -12,5 +12,7 @@ docker swarm init
 ## To join worker node to a master node ###
 docker swarm join
 
-TWO TYPES OF SERVICES IN DOCKER SWARM
-<img src="/docker/images"
+## TWO TYPES OF SERVICES IN DOCKER SWARM 
+Replicated mode and global mode ###
+
+<img src="https://github.com/seemathapliyal79/docker/blob/main/screenshots/docker-swarm-service.png">
