@@ -13,6 +13,6 @@ docker swarm init
 docker swarm join
 
 ## TWO TYPES OF SERVICES IN DOCKER SWARM 
-Replicated mode and global mode ###
+Replicated mode and global mode
 
-<img src="https://github.com/seemathapliyal79/docker/blob/main/screenshots/docker-swarm-service.png">
+<img src="https://github.com/seemathapliyal79/docker/blob/main/screenshots/docker-swarm-types-of-services.png">
