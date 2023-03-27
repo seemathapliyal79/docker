@@ -7,6 +7,13 @@ docker ps
 
 
 docker image ls                         # to list images on your server 
+docker image prune                      # remove danbgling images
+docker image prune -a                   # remove all images not associated with container
+
+
+docker ps -a                            # to list all containers .. runni9ng or stopped
+docker ps                            # to list all running containers
+
 
 docker pull nginx:1.21
 docker pull nginx
