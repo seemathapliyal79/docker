@@ -42,6 +42,11 @@ docker kill <container id bab9261d91ef>           # to stop a running container.
 docker rm <container id e8cf4408db94>                            # to remove/ delete a stopped container
 docker rm --force e8cf4408db94
 docker rm --force 0b1fd22169fd bab9261d91ef 0144124cef5c
+docker rm --volumes redis                                        # to remove container and associated volumes.Note that if a volume was specified with a name, it will not be removed.
+
+## Remove a container and selectively remove volumes
+ docker create -v awesome:/foo -v /bar --name hello redis
+ docker rm -v hello
 
 
 ///   The docker run command must specify an IMAGE to derive the container from. An image developer can define image defaults related to:
