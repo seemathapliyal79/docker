@@ -1,0 +1,20 @@
+# Pruning is  cleaning up unused objects (often referred to as “garbage collection”), such as images, containers, volumes, and networks: 
+these objects are generally not removed unless you explicitly ask Docker to do so.
+
+
+
+# By default, docker image prune only cleans up dangling images. A dangling image is one that is not tagged and is not referenced by any container.
+
+docker image prune                                 ### prune only cleans up dangling image
+docker image prune -a                              ### To remove all images which are not used by existing containers
+docker image prune -a --filter "until=240h"        ### removes images created more than 10 days (240h) ago:
+
+docker container prune                                 ### prune stopped containers
+docker volume prune
+docker volume prune --filter "label!=keep"              ## docker volume prune --filter "label!=keep"           
+docker network prune
+
+
+
+docker system prune                           ## shortcut that prunes images, containers, and networks. Volumes are not pruned by default
+docker system prune --volumes                 ## To also prune volumes with system prune, add the --volumes
