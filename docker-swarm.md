@@ -1,5 +1,5 @@
 Docker swarm is container orchestration tools.
-  - 	Helps deploy containers across multiple server/vms/cluster
+  	-   Helps deploy containers across multiple server/vms/cluster
 	-   Provides desired state
 	-   Scale up and down across the servers/vm/cluster
   
@@ -14,7 +14,7 @@ docker swarm join-token worker
 
 ## Some related commands of swarm cluster
 	# Demote one or more nodes from manager in the swarm 
-docker node demote						
+	docker node demote						
 docker node inspect						## Display detailed information on one or more nodes ##
 docker node ls							## List nodes in the swarm
 docker node promote						## Promote one or more nodes to manager in the swarm
