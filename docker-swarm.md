@@ -1,7 +1,7 @@
 Docker swarm is container orchestration tools.
-  	-   Helps deploy containers across multiple server/vms/cluster
-	-   Provides desired state
-	-   Scale up and down across the servers/vm/cluster
+  	#   Helps deploy containers across multiple server/vms/cluster
+	#   Provides desired state
+	#   Scale up and down across the servers/vm/cluster
   
 
 Basic commands:
