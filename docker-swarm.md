@@ -13,8 +13,8 @@ docker swarm init
 docker swarm join-token worker
 
 ## Some related commands of swarm cluster
-docker node demote						## Demote one or more nodes from manager in the swarm
-docker node inspect						## Display detailed information on one or more nodes
+docker node demote						## Demote one or more nodes from manager in the swarm ##
+docker node inspect						## Display detailed information on one or more nodes ##
 docker node ls							## List nodes in the swarm
 docker node promote						## Promote one or more nodes to manager in the swarm
 docker node ps							## List tasks running on one or more nodes, defaults to current node
