@@ -13,15 +13,15 @@ docker swarm init
 docker swarm join-token worker
 
 ## Some related commands of swarm cluster
-	# Demote one or more nodes from manager in the swarm 
+Demote one or more nodes from manager in the swarm <br/>
 	docker node demote						
 docker node inspect						## Display detailed information on one or more nodes <br/>
 docker node ls							## List nodes in the swarm <br/>
 docker node promote						## Promote one or more nodes to manager in the swarm <br/>
 docker node ps							## List tasks running on one or more nodes, defaults to current node <br/>
-docker node rm							## Remove one or more nodes from the swarm
-docker node update						## Update a node
-docker info | grep -i swarm					## on worker node to check the swarm status #
+docker node rm							## Remove one or more nodes from the swarm <br/>
+docker node update						## Update a node <br/>
+docker info | grep -i swarm					## on worker node to check the swarm status <br/>
 
 ## TWO TYPES OF SERVICES IN DOCKER SWARM 
 Replicated mode and global mode
