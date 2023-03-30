@@ -1,5 +1,5 @@
-Docker swarm is container orchestration tools \
-  	#   Helps deploy containers across multiple server/vms/cluster
+# Docker swarm is container orchestration tools
+  # Helps deploy containers across multiple server/vms/cluster
 	#   Provides desired state
 	#   Scale up and down across the servers/vm/cluster
   
