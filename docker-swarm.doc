@@ -27,7 +27,14 @@ Replicated mode and global mode
 <img src="https://github.com/seemathapliyal79/docker/blob/main/screenshots/docker-swarm-types-of-services.png">
 
 
+###	Docker swarm requires an ingress network, to communicate between the nodes. If it is not present it fails to create as service and throws below error:
+Error response from daemon: rpc error: code = 9 desc = service needs ingress network, but no ingress network is present 
+### To resolve this issue check the docker network and if ingress is missing.. create ingress network with below command
+docker network ls
+docker network create --ingress --driver overlay ingress
 
+
+####		WORKING WITH DOCKER SERVICE	#####
 
 docker service create --name myapp --mode replicated --replicas 7 -p 9080:3000 lerndevops/samples:pyapp-v1
 docker service create --name mydb --mode replicated --replicas 3 -p 9081:27017 mongo:latest
