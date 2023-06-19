@@ -62,6 +62,8 @@ docker run -d -p 9080:8080 tomcat:8.5.40                                   ## -p
 
 docker exec -it fd4baa8eae99 /bin/bash
 
+docker stats                                                              ## check docker statistics like memory/cpu utilization.
+
 
 
 
